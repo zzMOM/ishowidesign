@@ -9,6 +9,12 @@ body {
   padding-bottom: 40px;
 }
 
+.text-muted {
+  color: #B74934;
+  background-color: #AA9A66;
+  font-family: Arial Black;
+}
+
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;

@@ -7,23 +7,24 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="img/favicon.png">
 
-    <title>Signin Template for Bootstrap</title>
+    <title>登陆ishowidesign</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/signin.css" rel="stylesheet">
+    <link href="signin.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
+
   </head>
 
   <body>
-
+  
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
@@ -31,22 +32,43 @@
           <li><a href="#">注册</a></li>
           <li><a href="#">帮助</a></li>
         </ul>
-        <h1 class="text-muted">衣秀Design</h1>
+        <h1 class="text-muted">优品创衣吧</h1>
       </div>
 
       <div class="row">
-      <div class="col-md-4">
-      <form class="form-signin">
-        <h2 class="form-signin-heading">请登陆</h2>
-        <input type="text" class="form-control" placeholder="Email/手机号" autofocus>
-        <input type="密码" class="form-control" placeholder="请输入密码">
-        <label class="checkbox">
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">确认登陆</button>
-      </form>
+      <div id="signin" class="col-md-4">
+        <form class="form-horizontal" id="signinInfo" name="signinForm" action="" method="">
+        <fieldset>
+          <h2 class="form-signin-heading">请登陆</h2>
+          <div calss="control-group">
+            <label class="control-label" for="inputEmail">用户名</label>
+            <div class="controls">
+              <input type="text" id="userName" name="userName" placeholder="Email/手机号" autofocus>
+            </div>
+          </div>
+          <!--   -->
+          <div class="control-group">
+            <label class="control-label" for="inputPassword" id="passwordLabel">密码</label>
+            <div class="controls">
+              <input type="password" id="password" name="password" placeholder="请输入密码">
+            </div>
+          </div>
+          <!--  -->
+          <div class="control-group">
+            <div class="controls">
+              <label class="checkbox">
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+          <button class="btn btn-lg btn-primary btn-block" type="submit" id="submit_button">确认登陆
+            <a href="javascript:void submitForm()"></a>
+          </button>
+          <div id="forgotPassword">
+            <a href="javasript:void forgotPassword();">忘记密码?</a>
+          </div>
+        </fieldset>
+        </form>
       </div>
-      <div class="col-md-8">
+      <div id="joinArea" class="col-md-8">
         <p>还没有注册，现在就开始注册</p>
       </div>
       </div>
